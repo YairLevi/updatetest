@@ -1,18 +1,35 @@
 {
-  "name": "electron-app",
+  "name": "yes-yair-levi",
   "version": "1.0.4",
   "description": "My test electron app",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon --exec electron .",
     "start": "electron .",
     "dist": "electron-builder"
   },
-  "author": "CoderJeet",
+  "author": "Yair",
+  "repository": "https://github.com/YairLevi/updatetest",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "license": "ISC",
+  "dependencies": {
+    "electron-updater": "^5.3.0"
+  },
   "devDependencies": {
-    "electron": "^19.0.9",
-    "nodemon": "^2.0.19"
+    "electron": "^24.3.1",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "thisisauniueqidentieijg.YAIRLEVI",
+    "productName": "my-first-updated-app-jeez",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
   }
 }

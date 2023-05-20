@@ -2,6 +2,7 @@ const { app, BrowserWindow, ipcMain, globalShortcut } = require("electron");
 const path = require("path");
 
 class MainScreen {
+  /**@type {BrowserWindow} */
   window;
 
   position = {
@@ -36,7 +37,6 @@ class MainScreen {
     this.handleMessages();
 
     let wc = this.window.webContents;
-    wc.openDevTools({ mode: "undocked" });
 
     this.window.loadFile("./screens/main/main.html");
   }

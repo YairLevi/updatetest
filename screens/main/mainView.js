@@ -7,3 +7,7 @@ function updateMessage(event, message) {
   let elemE = document.getElementById("message");
   elemE.innerHTML = message;
 }
+
+function restart() {
+  window.bridge.sendRestart()
+}
