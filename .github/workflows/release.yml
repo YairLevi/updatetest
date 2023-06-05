@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run sudo snap
+        run: sudo snap install snapcraft --classic
+
       - name: Build release assets
         run: npm run build
 
