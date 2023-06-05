@@ -6,14 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder --publish always"
   },
   "author": "Yair",
-  "repository": "https://github.com/YairLevi/updatetest",
-  "publish": {
-    "provider": "github",
-    "releaseType": "release"
-  },
   "license": "ISC",
   "dependencies": {
     "electron-updater": "^5.3.0"
