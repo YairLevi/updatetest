@@ -21,7 +21,8 @@
     "appId": "thisisauniueqidentieijg.YAIRLEVI",
     "productName": "my-first-updated-app-jeez",
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "publish": "github"
     },
     "directories": {
       "output": "dist"
